@@ -1,0 +1,8 @@
+---
+- name : Deploy Calculator docker image
+  hosts: all
+  tasks:
+    - name: Pull the calculator image
+      docker_image:
+        name: hruthikchevuri/miniproject
+        source: pull

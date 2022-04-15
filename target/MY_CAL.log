@@ -1,0 +1,18 @@
+15/Apr/2022:21:50:35 593 [Calc.java] [INFO] MY_CAL.Calc SQUARE ROOT of 4.0
+15/Apr/2022:21:50:35 598 [Calc.java] [INFO] MY_CAL.Calc result of square root is 2.0
+15/Apr/2022:21:51:05 049 [Calc.java] [INFO] MY_CAL.Calc FACTORIAL of 5.0
+15/Apr/2022:21:51:05 053 [Calc.java] [INFO] MY_CAL.Calc result of factorial is 120.0
+15/Apr/2022:21:51:13 500 [Calc.java] [INFO] MY_CAL.Calc LOG of 7.0
+15/Apr/2022:21:51:13 505 [Calc.java] [INFO] MY_CAL.Calc result of logarithm is 1.9459101490553132
+15/Apr/2022:21:51:34 272 [Calc.java] [INFO] MY_CAL.Calc 6.0 POWER 2
+15/Apr/2022:21:51:34 279 [Calc.java] [INFO] MY_CAL.Calc result of power is 36.0
+15/Apr/2022:21:58:14 434 [Calc.java] [INFO] MY_CAL.Calc SQUARE ROOT of 2.0
+15/Apr/2022:21:58:14 439 [Calc.java] [INFO] MY_CAL.Calc result of square root is 1.4142135623730951
+15/Apr/2022:21:58:24 497 [Calc.java] [INFO] MY_CAL.Calc FACTORIAL of 3.0
+15/Apr/2022:21:58:24 500 [Calc.java] [INFO] MY_CAL.Calc result of factorial is 6.0
+15/Apr/2022:21:58:53 195 [Calc.java] [INFO] MY_CAL.Calc LOG of 9.0
+15/Apr/2022:21:58:53 198 [Calc.java] [INFO] MY_CAL.Calc result of logarithm is 2.1972245773362196
+15/Apr/2022:21:59:04 362 [Calc.java] [INFO] MY_CAL.Calc 8.0 POWER 4
+15/Apr/2022:21:59:04 369 [Calc.java] [INFO] MY_CAL.Calc result of power is 4096.0
+15/Apr/2022:21:59:13 040 [Calc.java] [INFO] MY_CAL.Calc FACTORIAL of 10.0
+15/Apr/2022:21:59:13 045 [Calc.java] [INFO] MY_CAL.Calc result of factorial is 3628800.0

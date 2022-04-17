@@ -34,30 +34,30 @@ class Calc{
      System.out.print("\n");   
           
      if(operator.equals("SQRT")){            //CASE1
-        log.info("SQUARE ROOT of "+input);
+        log.info("[ROOT] - " +input);
         double res = mycal.sqrt_func(input);
-        log.info("result of square root is "+res);
+        log.info("[RESULT - ROOT] - " +res);
         System.out.println("The result for square root of " + input + " is " + res);
      }
      else if(operator.equals("FACT")){       //CASE2
-        log.info("FACTORIAL of "+input);
+        log.info("[FACTORIAL] - "+input);
         double res = mycal.fact_func(input);
-        log.info("result of factorial is "+res);
+        log.info("[RESULT - FACTORIAL] - " +res);
         System.out.println("The result for factorial of " + input + " is " + res);
      }
      else if(operator.equals("LOG")){        //CASE3
-        log.info("LOG of "+input);
+        log.info("[LOG] - "+input);
         double res = mycal.log_func(input);
-        log.info("result of logarithm is "+res);
+        log.info("[RESULT - LOG] - " +res);
         System.out.println("The result for logarithm of " + input + " is " + res);
      }
      else if(operator.equals("POW")){        //CASE4
         
         System.out.print("Enter the power value to be calculated:");
         int power = scan.nextInt();
-        log.info(input+ " POWER "+power);
+        log.info("[POWER] - "+input+ ", "+power);
         double res = mycal.pow_func(input,power);
-        log.info("result of power is "+res);
+        log.info("[RESULT - POWER] - " +res);
         System.out.println("\nThe result for " + input + " power " + power+  " is " + res);
      }
      else {
@@ -67,10 +67,10 @@ class Calc{
      }
      
   }
-  public double sqrt_func(double inp){
+  public double sqrt_func(double inp){       //SQRT function
      return Math.sqrt(inp);
   }
-  public double fact_func(double inp){
+  public double fact_func(double inp){       //FACTORIAL function
      if(inp < 0){ return Double.NaN;}
      else if(inp ==0){ return 1;}
      double res = 1;
@@ -80,10 +80,10 @@ class Calc{
        return res;
      
   }
-  public double log_func(double inp){
+  public double log_func(double inp){          // LOGARITHM function
      return Math.log(inp);
   }
-  public double pow_func(double inp, int pow){
+  public double pow_func(double inp, int pow){  // POWER function
      return Math.pow(inp,pow);
   }
 

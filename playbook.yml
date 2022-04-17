@@ -1,8 +1,35 @@
 ---
 - name : Deploy Calculator docker image
-  hosts: all
+  hosts: suchith
   tasks:
     - name: Pull the calculator image
+      docker_image:
+        name: hruthikchevuri/miniproject
+        source: pull
+
+- hosts: ec2
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Yum repository list for Docker
+      yum_repository:
+        name: docker
+        description: yum repository for docker
+        baseurl: https://download.docker.com/linux/centos/7/x86_64/stable/
+        gpgcheck: no
+    - name: Install Python3 
+      package:
+        name: python3
+        state: present
+
+    - name: Installing docker-py using pip
+      pip:
+        name: docker-py
+    - name: service docker start
+      service:
+        name: docker
+        state: started
+    - name: Pull calculator image from dockerhub
       docker_image:
         name: hruthikchevuri/miniproject
         source: pull
